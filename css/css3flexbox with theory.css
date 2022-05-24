@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    ;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 5%;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* header start */
+
+header {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../pic/theory/dd.jpg);
+    background-size: cover;
+    text-align: center;
+    border-top: 0.6rem solid #5385c1;
+}
+
+
+/* nav start */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+
+/* nav ends */
+
+
+/* heading start */
+
+.heading {
+    margin-top: 8rem;
+    color: #fff;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.heading p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+
+/* heading ends */
+
+
+/* header end */
+
+
+/* info starts */
+
+.info section {
+    width: 30%;
+    padding: 1.25rem;
+}
+
+hr {
+    border: 0.5;
+    background-color: #dfdfdf;
+}
+
+.info section h2 {
+    color: #5385c1;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+
+.info section p {
+    color: grey;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.more {
+    padding: 12px 25px;
+    background-color: #5385c1;
+    color: #fff;
+    border: 0;
+}
+
+
+/* info ends */
+
+
+/* bluesection starts */
+
+.bluesection {
+    width: 100%;
+    background-color: #5385c1;
+    text-align: center;
+    color: #fff;
+}
+
+.bluesection h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 0.8rem;
+}
+
+.bluesection p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-bottom: 3rem;
+}
+
+.box {
+    border: 2px solid #dfdfdf;
+    padding: 1rem 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.box img {
+    border-radius: 100%;
+    width: 65%;
+    margin: 1.5rem 0;
+}
+
+.box h3 {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.box p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+
+/* bluesection ends */
+
+
+/* twoimage starts */
+
+.twoimage {
+    text-align: center;
+}
+
+.twoimage h2 {
+    color: #5385c1;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 0.7rem;
+}
+
+.twoimage p {
+    color: grey;
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+}
+
+.left {
+    width: 47%;
+    text-align: left;
+}
+
+.left img {
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+
+.left h3 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: #5385c1;
+    margin-bottom: 1.8rem;
+}
+
+.left p {
+    color: grey;
+    font-weight: 100;
+    line-height: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+
+/* twoimage ends */
+
+
+/* footer starts */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer hr {
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.copyright p {
+    color: gray;
+    font-weight: 100;
+}
+
+.socialmedia a {
+    padding: 6px;
+    font-size: 1.5rem;
+    color: #5385c1;
+}
+
+
+/* footer ends */
+
+
+/* mediaquery starts */
+
+@media (max-width:930px) {
+    .info section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .info hr {
+        border: 0;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 0px;
+        justify-content: center;
+    }
+    .box {
+        width: 75%;
+    }
+    .left {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+
+/* mediaquery ends */
